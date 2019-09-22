@@ -1,0 +1,23 @@
+// for : loop 횟수가 정해져 있을 때 많이 사용.
+// while : loop 횟수가 정해져 있지 않을 때 많이 사용.
+
+#include <stdio.h>
+
+// for loop
+main(){
+// block 앞부분에 미리 선언. 
+// C++ : block에 같이 선언
+  int i, sum = 0;
+  for(i = 0; i < 100; i++){
+    sum += i;
+  }
+}
+
+
+// while loop
+main(){
+  int i = 0, sum = 0;
+  while(i <= 100){
+    sum += i++;
+  }
+}
