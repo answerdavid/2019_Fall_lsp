@@ -11,14 +11,14 @@ main()
   float f = 3.14; double d = 99.999;
   int *p &i;
   
-  // %c : character, %s : string, %d : decimal(int), %x : Hexa-decimal(x: 소문자, X : 대문자, # : 0X 출력)
-  // %ld : long decimal, %f : float, %lf : double, %p : pointer
+// %c : character, %s : string, %d : decimal(int), %x : Hexa-decimal(x: 소문자, X : 대문자, # : 0X 출력)
+// %ld : long decimal, %f : float, %lf : double, %p : pointer
   printf("Output : %c %s %d %#x %ld %.4f %.21f %p \n" , c,s,i,i,l,f,d,p);
   
-  // == printf(%c, c);
+// == printf(%c, c);
   putchar(c);
   
-  // == printf(%s, s);
+// == printf(%s, s);
   puts(s)
   
   
