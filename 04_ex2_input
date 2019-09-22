@@ -8,9 +8,16 @@ main()
   
 // scanf : Input function
 // & : pointer를 넘긴다. s : 그 자체가 pointer (array 시작주소값)
+// C : reference type 존재 X -> 반드시 pointer로 넘겨줌.
   scanf("%c %s %d %ld %f %lf", &c, s, &i, &l, &f, &d);
   printf("Output: %c %s %d %ld %.4f %.2lf %p \n", c, s, i, l, f, d, p);
 
+// Input 1 character
+  c = getchar();
+  putchar(c);
 
+// Input string
+  gets(s);
+  puts(s);
 
 }
