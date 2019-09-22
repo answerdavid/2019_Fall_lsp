@@ -1,0 +1,27 @@
+// C : don't have bool class -> int로 나타냄
+// 0 : False, !0 : True
+// #DEFINE TRUE = 1, #DEFINE FALSE = 0
+// enum { FALSE, TRUE };
+
+// EX4 code
+
+#include <stdio.h>
+main(){
+
+// True because it is not Zero.
+  int num = -1;
+  
+  if(num > 0)
+    printf("positive");
+  else if(num < 0)
+    printf("negative");
+  else
+    printf("zero");
+  
+// True because it is -1.
+  if(num)
+    printf("true");
+  else
+    printf("false");
+
+}
