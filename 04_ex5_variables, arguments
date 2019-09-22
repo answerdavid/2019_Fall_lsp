@@ -1,0 +1,30 @@
+// Variable & Arguments
+// Local : function 안에서 access
+// Global : 모든 곳에서 access -> maintenance 힘듬. (소프트웨어 처리시) -> 사용 자제
+// Static : 저장 공간 생성을 초기에 한 번.
+// Automatic : 저장 공간 생성, 지움을 반복.
+// 모든 Global variable -> static variable
+
+
+#include <stdio.h>
+// variable, global, static
+int global = 2; 
+
+// arguments
+func(int a, int b){
+
+// static variable
+  static int scale = 1;
+  
+// automatic variable
+  int result = (a + b) *global * scale;
+  scale *= 10;
+  return result;
+}
+
+// main function
+main(){
+  printf("result = %d\n", func(10,20));
+  printf("result = %d\n", func(10,20));
+
+}
