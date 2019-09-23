@@ -1,4 +1,28 @@
 // Command-line Arguments
 
 // command line
-$ mycp mycp.c yourcp.c
+
+$ mycp mycp.c yourcp.c 
+    #include <stdio.h>
+    main(int argc, char *argv[])
+    {
+      if(argc != 3){
+        printf("Usage : %s src dst\n", argv[0]);
+        exit(1);
+      }
+    
+    }
+    
+    
+
+// ls 와 비슷한 program
+$ a.out *
+    #include <stdio.h>
+    main(int argc, char *argv[])
+    {
+      int i;
+      for(i = 0; i < argc; i++){
+        printf("argv[%d] = %s\n", i, argv[i]);
+      }
+    
+    }
