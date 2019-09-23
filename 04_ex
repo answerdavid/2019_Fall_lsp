@@ -1,0 +1,10 @@
+// 2, 3번쨰 parameter 더하는 Command-line argument
+
+main()
+{
+  int a = atoi(argv[1]);
+  int b = atoi(argv[2]);
+  
+  printf("%d\n", a+b);
+
+}
