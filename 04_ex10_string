@@ -9,22 +9,28 @@ main(){
     char *dest = "This is the lsp class."
     char *src; 
     
-// change string into int
+// Convert string to int
     char num[] = "10";
     int j = atoi(num);
+    printf("String to int : " , j);
+  
+// conver int to string
+    int number = 11111;
+    sprintf(src, "%d", i);
     
-    // length of string
+// length of string
     printf(strlen(str));
     
-    // copy
-    strcpy(char *str, char *src);
+// copy
+    strcpy(str, src);
     
-    // add 
-    strcat(char *str, char *dest);
+// add 
+    strcat(str, dest);
     
-    // Compare
-    // return 0 if s1 == s2 or s1 > s2
-    // (s1 - s2) return
-    printf(strcmp(char *dest, char *str));
+// Compare
+// return 0 if s1 == s2 or s1 > s2
+// (s1 - s2) return
+    printf(strcmp(dest, str));
+    
 
 }
