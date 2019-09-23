@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+// Pointer
+// Pointer 로 programming -> 더 우수
+squre(int a[], int num){
+    int i;
+    
+    for(i = 0; i < num; i++){
+      a[i] *= a[i];
+    }
+}
+
+// Array
+// Array name = pointer
+squre(int *a, int num){
+    int i;
+    
+    for(i = 0; i < num; i++){
+      a[i] *= a[i];
+    }
+}
+
+main(){
+    int a[5] = {1,2,3,4,5};
+    square(a,5);
+}
+
