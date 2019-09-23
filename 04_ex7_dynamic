@@ -21,6 +21,4 @@ main(){
     /* do something */
     
     // delete
-    free(p);
-
-}
+    fre
