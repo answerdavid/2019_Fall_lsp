@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+main(){
+    int *p = (int *)malloc(sizeof(int));
+    *p = 10;
+    printf("%d/n", *p);
+    
+// Error 1: dangling pointer
+// 가리킬 수 없는 곳을 가리키고 있는 것.
+    free(p); // 해제
+    printf("%d/n", *p); // 사용X
+    
+// Error 2 : garbage
+// 계속 연속 실행시 발생 확률이 높아짐.
+// garbage collection 기능이 없기 때문
+    p = (int *)malloc(sizeof(int))
+
+
+}
