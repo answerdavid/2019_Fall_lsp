@@ -1,0 +1,26 @@
+// Dynamic allocation
+// C++ : new, delete
+// C : malloc, free
+
+#include <stdio.h>
+// To use sizeof function
+#include <stdlib.h>
+
+main(){
+// sizeof() : byte 크기
+// Dynamic allocation using "malloc"
+    int *p = (int *)malloc(100 * sizeof(int));
+    
+    if(!p){
+        printf("Not enough memory! \n");
+        exit(1);
+    }
+    
+    p[0] = 1; p[1] = 2;
+    
+    /* do something */
+    
+    // delete
+    free(p);
+
+}
