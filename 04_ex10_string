@@ -1,0 +1,30 @@
+// string library
+
+#include <stdio.h>
+#include <string.h>
+
+main(){
+  
+    char str[80] = "My name is david";
+    char *dest = "This is the lsp class."
+    char *src; 
+    
+// change string into int
+    char num[] = "10";
+    int j = atoi(num);
+    
+    // length of string
+    printf(strlen(str));
+    
+    // copy
+    strcpy(char *str, char *src);
+    
+    // add 
+    strcat(char *str, char *dest);
+    
+    // Compare
+    // return 0 if s1 == s2 or s1 > s2
+    // (s1 - s2) return
+    printf(strcmp(char *dest, char *str));
+
+}
