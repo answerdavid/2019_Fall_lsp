@@ -1,21 +1,25 @@
 // Command-line Arguments
 
 // command line
+// argv[0] argv[1] argv[2]
 
 $ mycp mycp.c yourcp.c 
     #include <stdio.h>
+// command line argument
     main(int argc, char *argv[])
     {
       if(argc != 3){
         printf("Usage : %s src dst\n", argv[0]);
+// 비정상적인 수행. 정상적인 수행 : exit(0)
         exit(1);
-      }
-    
+      }    
     }
+    /* copy argv[1] to argv[2] */
     
     
 
 // ls 와 비슷한 program
+// "*" : 모든 file 적용(. 로 시작하는 file 제외)
 $ a.out *
     #include <stdio.h>
     main(int argc, char *argv[])
