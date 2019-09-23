@@ -5,6 +5,7 @@ main()
   char c,s[80];
   int i; long l;
   float f; double d;
+  int *p = &i;
   
 // scanf : Input function
 // & : pointer를 넘긴다. s : 그 자체가 pointer (array 시작주소값)
